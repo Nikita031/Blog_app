@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BlogPage</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Zilla Five</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+  <div id="header">
+  <!-- <h1 style="color:#999999; font-family: impact, sans-serif;">Blog Page </h1> -->
+
+
+  <!-- <div id="horiznav"><a href="#">Home</a> <a href="#">Partners</a> <a href="#">Services</a> <a href="#">Locations</a> <a href="#">Contact</a></div> -->
+  </div>
+  <div id="vertinav">
+    <img src="/assets/blog.jpeg" alt="imade" height="200px" width="200px"></img>
+    <img src="/assets/blogicon.jpeg" alt="imade" height="200px" width="200px"></img>
+    <img src="/assets/bloging.jpeg" alt="imade" height="200px" width="200px"></img>
+
+
+  <br />
+  </div>
+  <div id="content">
+   <h1 style="color:#006699; font-family: impact, sans-serif;">Welcome to New Blog Page!</h1>
+   <br>
+   <h2 style="color:#006699; font-size:18px; font-family:'Times New Roman', Times, serif; margin: 5px 0 0 5px;">Create your own beautiful blog....</h2>
+   <br>
+   <p>A blog (short for “weblog”) is an online journal or informational website run by an individual, group, or corporation that offers regularly updated content (blog post) about a topic. It presents information in reverse chronological order and it’s written in an informal or conversational style.</p>
+   <p>A blog is a website or page that is a part of a larger website. Typically, it features articles written in a conversational style with accompanying pictures or videos. Blogging is a fun and flexible way for self-expression and social connection, so it is no wonder blogs have become very popular.</p>
+   <%= yield %>
+   <br>
+   <div id="footer" style="text-align: center;">&copy; 2023 Telephone Directories All rights reserved | By Nikita</div>
+  </div>
+
+</body>
+</html>
